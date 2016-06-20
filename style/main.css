@@ -1,0 +1,329 @@
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
+li, dl, dt, dd, form, a, fieldset, input, th, td
+{margin: 0; padding: 0; border: 0; outline: none;}
+h1, h2, h3, h4, h5, h6{font-size: 100%;padding: .6em 0;margin: 0 15px;}
+ul, ol{list-style: none;}
+a{color: black;text-decoration: none;}
+a:hover
+{text-decoration: underline;}
+body{
+    width: 100%;
+    font-family:"microsoft yahei";
+}
+header{
+    height: 72px;
+    line-height: 72px;
+    background: #e79330;
+    font-size: 13pt;
+}
+#logo-b{
+    width: 44px;
+    height: 44px;
+}
+.adver-img{
+    height: 360px;
+    border-bottom:1px solid #d5d5d5;
+}
+#adver-text{
+    height: 234px;
+    border-bottom:1px solid #d5d5d5;
+    padding-top: 1.5%;
+}
+#adver-text-log-in{
+    height: 126px;
+}
+.bottom-sub{
+    height: 108px;
+}
+#th-img{
+    height: 324px;
+    padding-top:1%;
+}
+#register-div{
+    height: 126px;
+}
+#about-us{
+    height: 90px;
+}
+footer{
+    height: 180px;
+}
+header .company-name{
+    letter-spacing: .2em;
+}
+.middle-text{
+    display:block;
+    width: 260px;
+    margin: 0 auto;
+    margin-top: 25%;
+    font-size: 16pt;
+}
+#adver-text dl{
+    height: 100%;
+}
+#adver-text dt{
+    font-size: 12pt;
+    margin: 10% 0;
+}
+.margin-dl{
+    margin-left:4%;
+}
+#adver-text dd{
+    margin: 5% 0;
+    color:#717071;
+    font-size: 11pt;
+}
+#adver-text-log-in span{
+    font-size: 12pt;
+    display: block;
+    width: 35%;
+    line-height: 1.8em;
+    margin: 0 auto;
+}
+#adver-text-log-in{
+    padding-top:2% ;
+    padding-left: 2%;
+}
+#adver-text-log-in p{
+    color:#717071;
+    font-size: 11pt;
+    margin-left: 4%;
+    letter-spacing: 1px;
+    line-height: 1.8em;
+}
+#adver-text-log-in a{
+    color: #e79330;
+}
+#bottom-adver-img{
+    background: #595757;
+}
+.middle-text-2{
+    display: block;
+    margin: 0 auto;
+    margin-top:25%;
+    font-size: 16pt;
+    width: 370px;
+    color: #fff;
+}
+.middle-text-3{
+    display: block;
+    margin: 0 auto;
+    font-size:16pt;
+    width: 340px;
+    color: #e79330;
+}
+.bottom-sub{
+    border-bottom:1px solid #d5d5d5;
+}
+#th-img dt{
+    margin:0 auto;
+    font-size: 12pt;
+    width: 66px;
+    margin-top: 10%;
+}
+#th-img #img-3{
+
+}
+#th-img .th_img{
+    display: block;
+    width: 80px;
+    margin:0 auto;
+    margin-top: 14%;
+    margin-bottom: 14%;
+}
+#th-img .th_img img{
+    width: 80px;
+    height: 80px;
+}
+#th-img dd{
+    display:block;
+    margin:2% auto;
+    width: 200px;
+    text-align: center;
+    font-size: 11pt;
+    color: #717071;
+}
+#th-img .row{
+    padding-left:6%;
+}
+#register-div{
+    background: #595757;
+    padding-left: 5%;
+}
+.register-button{
+    width: 252px;
+    padding-top: 1.5%;
+    color: #fff;
+    background: #e79330;
+    font-size: 16pt;
+    height:60px;
+    text-align: center;
+    margin-top: 3%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+.register-button a{
+    color: #fff;
+}
+#about-us{
+    width: 65%;
+    margin: 0 auto;
+    font-size: 10pt;
+    padding-top: 2.5%;
+
+    font-family: Arial;
+    border-bottom:1px solid #d5d5d5;
+}
+footer{
+    width: 65%;
+    margin: 0 auto;
+    font-size: 9pt;
+    font-family: Arial,"microsoft yahei";
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    text-indent: 3em;
+    padding-top: 2%;
+}
+footer img{
+    width: 44px;
+    height: 44px;
+    display: block;
+    margin-top: 2%;
+    margin-left:3%;
+}
+#bottom-modul .bottom-sub{
+    line-height: 108px;
+}
+@media screen and (min-width: 769px){
+    #about-us .col-xs-offset-2{
+        margin-left: 3%;
+    }
+}
+/*phone*/
+@media screen and (max-width: 768px){
+    #register{
+        display: none;
+    }
+    #log-in{
+        padding: 0;
+    }
+    .adver-img-container{
+        height: 700px;
+        border-bottom:1px solid #d5d5d5;
+    }
+    .adver-img{
+        border-bottom: none;
+    }
+    .middle-text{
+        position: absolute;
+        top: 80%;
+        left: 20%;
+        margin: 0;
+    }
+    #adver-text{
+        height: 640px;
+    }
+    #adver-text .col-md-offset-1{
+        margin-left: 15px;
+    }
+    #adver-text dl{
+        margin-top: 25%;
+    }
+    #adver-text .row{
+        width:70%;
+        margin: 0 auto;
+    }
+    #adver-text-log-in{
+        line-height: 226px;
+        position: relative;
+        height: 226px;
+        padding-top: 0;
+    }
+    #adver-text-log-in .row{
+        position: absolute;
+        margin: 0 auto;
+        padding-top: 0;
+        line-height: 226px;
+        width: 86%;
+        top: 50%; left: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+    }
+    #adver-text-log-in .col-md-3{
+        width: 100%;
+    }
+    #adver-text-log-in span{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    #adver-text-log-in p{
+        text-align: left;
+        margin:0;
+    }
+    #bottom-adver-img{
+        height: 700px;
+    }
+    .middle-text-2{
+        position: relative;
+        top: 30%;
+        left: 5%;
+    }
+    .bottom-sub span{
+        text-align: center;
+    }
+    #th-img{
+        height: 1005px;
+        border-bottom:1px solid #d5d5d5;
+    }
+    #th-img .th_img{
+        margin:10% auto;
+    }
+    #th-img dl{
+        border-bottom: 1px solid #d5d5d5;
+        margin:0;
+        height: 335px;
+        padding-top: 7%;
+    }
+    #th-img dt{
+        margin-top:0;
+    }
+    #register-div span{
+        width: 100%;
+        display: block;
+        text-align: center;
+        line-height: 250%;
+    }
+    #register-div .row{
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 8%;
+    }
+    #about-us{
+        height: 74px;
+        width: 100%;
+    }
+    #about-us .row{
+        margin-top: 6%;
+    }
+    footer{
+        width: 100%;
+        letter-spacing: normal;
+    }
+    footer p{
+        margin-left: 10%;
+        margin-top: 3%;
+    }
+    footer img{
+        margin-left: 18%;
+        margin-top: 3%;
+    }
+    #th-img .row{
+        padding-left: 0;
+    }
+}
