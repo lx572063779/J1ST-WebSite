@@ -13,7 +13,6 @@ body{
 header{
     height: 72px;
     line-height: 72px;
-    background: #e79330;
     font-size: 13pt;
 }
 #logo-b{
@@ -21,16 +20,14 @@ header{
     height: 44px;
 }
 .adver-img{
-    height: 360px;
-    border-bottom:1px solid #d5d5d5;
+    height: 500px;
 }
 #adver-text{
-    height: 234px;
+    height: 340px;
     border-bottom:1px solid #d5d5d5;
-    padding-top: 1.5%;
 }
 #adver-text-log-in{
-    height: 126px;
+    height: 270px;
 }
 .bottom-sub{
     height: 108px;
@@ -52,10 +49,13 @@ header .company-name{
     letter-spacing: .2em;
 }
 .middle-text{
+    position: absolute;
     display:block;
     width: 260px;
     margin: 0 auto;
-    margin-top: 25%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
     font-size: 16pt;
 }
 #adver-text dl{
@@ -87,7 +87,6 @@ header .company-name{
 #adver-text-log-in p{
     color:#717071;
     font-size: 11pt;
-    margin-left: 4%;
     letter-spacing: 1px;
     line-height: 1.8em;
 }
