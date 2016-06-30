@@ -1,11 +1,27 @@
 body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
 li, dl, dt, dd, form, a, fieldset, input, th, td
 {margin: 0; padding: 0; border: 0; outline: none;}
-h1, h2, h3, h4, h5, h6{font-size: 100%;padding: .6em 0;margin: 0 15px;}
+h1, h2, h3, h4, h5, h6{font-size: 100%;margin: 0 15px;}
 ul, ol{list-style: none;}
 a{color: black;text-decoration: none;}
+button{
+    border-radius: 10px;
+    height:50px;
+    box-shadow: none;
+    border: none;
+    font-size: 14pt;
+}
 a:hover
-{text-decoration: underline;}
+{text-decoration: none;}
+@font-face {
+    font-family: "DINProRegular";
+    src: url(DINPro-Regular.otf);
+}
+@media screen and(min-width: 1200px){
+    .container{
+        width: 1026px;
+    }
+}
 body{
     width: 100%;
     font-family:"microsoft yahei";
@@ -19,28 +35,52 @@ header{
     width: 44px;
     height: 44px;
 }
+.logo{
+    width: 74px;
+}
 .adver-img{
     height: 500px;
+    position: relative;
+}
+#left-img{
+    display: block;
+    position: absolute;
+    left: -1%;
+    top: 30%;
+}
+#right-img{
+    display: block;
+    position: absolute;
+    right: -1%;
+    top: 30%;
 }
 #adver-text{
-    height: 340px;
-    border-bottom:1px solid #d5d5d5;
+    height: 300px;
+}
+#adver-text .row{
+    height: 100%;
 }
 #adver-text-log-in{
-    height: 270px;
+    height: 213px;
 }
 .bottom-sub{
-    height: 108px;
+    height: 170px;
 }
 #th-img{
-    height: 324px;
-    padding-top:1%;
+    height: 260px;
+    padding-top: 2.5%;
+    width: 53%;
+
 }
 #register-div{
-    height: 126px;
+    height: 186px;
 }
 #about-us{
     height: 90px;
+}
+#join-us{
+    height: 320px;
+    background: #595757;
 }
 footer{
     height: 180px;
@@ -53,25 +93,35 @@ header .company-name{
     display:block;
     width: 260px;
     margin: 0 auto;
-    left: 50%;
+    left: 55%;
     top: 50%;
     transform: translate(-50%,-50%);
     font-size: 16pt;
+    line-height: 2em;
+
 }
 #adver-text dl{
+    display: block;
     height: 100%;
 }
 #adver-text dt{
-    font-size: 12pt;
     margin: 10% 0;
 }
 .margin-dl{
-    margin-left:4%;
+
+}
+.col_md_1{
+    margin-left: 8%;
+}
+.col_md_2{
+    margin-left: 8%;
+}
+.col_md_3{
+    margin-left: 8%;
 }
 #adver-text dd{
     margin: 5% 0;
     color:#717071;
-    font-size: 11pt;
 }
 #adver-text-log-in span{
     font-size: 12pt;
@@ -80,59 +130,122 @@ header .company-name{
     line-height: 1.8em;
     margin: 0 auto;
 }
-#adver-text-log-in{
-    padding-top:2% ;
-    padding-left: 2%;
+#adver-text-log-in .col-md-8{
+    text-align: center;
+}
+#adver-text-log-in>.row{
+    margin-top: 2%;
 }
 #adver-text-log-in p{
     color:#717071;
     font-size: 11pt;
     letter-spacing: 1px;
-    line-height: 1.8em;
+    line-height: 2.5em;
 }
 #adver-text-log-in a{
     color: #e79330;
 }
+#adver-text-log-in button{
+    border-radius: 10px;
+    height:50px;
+    box-shadow: none;
+    background:#66E29B;
+    border: none;
+    font-size: 14pt;
+    color: #fff;
+}
 #bottom-adver-img{
+    height: 500px;
     background: #595757;
 }
-.middle-text-2{
-    display: block;
+.middle-text-2 h1,h2{
+    color:#717071;
+}
+.middle-text-h1{
+    height:42px;
+    font-size: 48px;
+    text-align: center;
+    margin-top:50px;
+    letter-spacing: 0.1em;
+    font-family: DINProRegular;
+    padding-bottom: 0;
+}
+.middle-text-h2{
+    font-size: 14px;
+    height: 18px;
+    text-align: center;
     margin: 0 auto;
-    margin-top:25%;
-    font-size: 16pt;
-    width: 370px;
-    color: #fff;
+    letter-spacing: 0.2em;
+    font-family: DINProRegular;
+    font-size: 16px;
+    margin-top: 24px;
+    margin-bottom: 60px;
+}
+
+.middle-text-sp{
+    color: #9E9E9F;
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: 0.2em;
+}
+.middle-text-tr{
+    height:50px;
+    box-shadow: none;
+    border: none;
+    font-size: 14pt;
+    margin-top: 15%;
+    font-family:DINProRegular;
+    letter-spacing: 0.2em;
+}
+.middle-text-tr .three{
+    color: #e79330;
+}
+.middle-text-tr button{
+    letter-spacing: 0.2em;
+    font-size: 15pt;
+    background: #e79330;
+    color: #595757;
+    font-weight: 300;
+}
+.middle-text-tr .first{
+    color: #717071;
+}
+.middle-text-tr span{
+    display: block;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 48px;
 }
 .middle-text-3{
     display: block;
     margin: 0 auto;
-    font-size:16pt;
+    font-size:18pt;
     width: 340px;
-    color: #e79330;
+    color: #9E9E9F;
+    letter-spacing: 0.1em;
+    text-indent: 1.5em;
 }
 .bottom-sub{
-    border-bottom:1px solid #d5d5d5;
+    border-bottom: 1px solid #d5d5d5;
+}
+#th-img dl{
+    height:80%;
 }
 #th-img dt{
     margin:0 auto;
-    font-size: 12pt;
-    width: 66px;
-    margin-top: 10%;
+    font-size:13pt;
+    width: 80px;
+    color:#e79330;
+    font-weight: normal;
+    letter-spacing: 0.1em;
 }
-#th-img #img-3{
+#th-img .yellow-en-text{
+    font-size: 29px;
+    color: #e79330;
+    font-family: DINProRegular;
+    margin: 8% auto;
 
-}
-#th-img .th_img{
-    display: block;
-    width: 80px;
-    margin:0 auto;
-    margin-top: 14%;
-    margin-bottom: 14%;
-}
-#th-img .th_img img{
-    width: 80px;
-    height: 80px;
 }
 #th-img dd{
     display:block;
@@ -142,18 +255,19 @@ header .company-name{
     font-size: 11pt;
     color: #717071;
 }
+#th-img .text-normal{
+    margin-top: 5%;
+}
 #th-img .row{
-    padding-left:6%;
+    height: 100%;
 }
 #register-div{
-    background: #595757;
     padding-left: 5%;
+    border-top: 1px solid #d5d5d5;
 }
 .register-button{
     width: 252px;
     padding-top: 1.5%;
-    color: #fff;
-    background: #e79330;
     font-size: 16pt;
     height:60px;
     text-align: center;
@@ -164,20 +278,44 @@ header .company-name{
     letter-spacing: 1px;
     font-weight: normal;
 }
+.register-button:hover{
+    background: #e79330;
+}
 .register-button a{
-    color: #fff;
+    color: #595757;
+}
+#join-us span{
+    text-align: center;
+    color: #e79330;
+}
+#join-us .join-us-1{
+    margin-top: 55px;
+    font-size: 29px;
+    font-family: DINProRegular;
+    letter-spacing: 2px;
+}
+#join-us .join-us-2{
+    margin-top: 44px;
+    font-size: 23px;
+}
+#join-us .join-us-3{
+    margin-top: 60px;
+    width: 171px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0%);
+    background: #e79330;
+    color:#5e5e5e;
 }
 #about-us{
-    width: 65%;
     margin: 0 auto;
     font-size: 10pt;
     padding-top: 2.5%;
-
     font-family: Arial;
-    border-bottom:1px solid #d5d5d5;
+    border-bottom:1px solid #231815;
+    background: #595757;
 }
 footer{
-    width: 65%;
     margin: 0 auto;
     font-size: 9pt;
     font-family: Arial,"microsoft yahei";
@@ -185,6 +323,7 @@ footer{
     letter-spacing: 1px;
     text-indent: 3em;
     padding-top: 2%;
+    background: #595757;
 }
 footer img{
     width: 44px;
@@ -194,7 +333,89 @@ footer img{
     margin-left:3%;
 }
 #bottom-modul .bottom-sub{
-    line-height: 108px;
+    line-height: 210px;
+}
+.green-h{
+    color: #66E29B;
+    font-size: 28pt;
+    font-weight: 400;
+    font-family: DINProRegular;
+}
+.light-dr{
+    color: #717071;
+    font-size: 14pt;
+    letter-spacing: 2px;
+}
+.light-h{
+    color: #717071;
+    font-size: 32pt;
+    letter-spacing: 6px;
+    font-family: DINProRegular;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    font-weight: 600;
+}
+.light-bo{
+    font-family: DINProRegular;
+    color: #717071;
+    font-size: 13pt;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.warm-talk{
+    width: 186px;
+    margin-right: 0;
+    font-size: 14px;
+    line-height: 2em;
+}
+.bottom-right-text{
+    position: absolute;
+    right: 22%;
+    bottom: 10%;
+    font-size: 14pt;
+}
+#dollar-animate{
+    height: 124px;
+}
+#dollar-animate-3:before{
+    display: block;
+    height: 50%;
+    content: "";
+    border-bottom: 1px solid #d5d5d5;
+    width: 450px;
+    z-index: 1000;
+    position: absolute;
+    left: -1250%;
+}
+#dollar-animate-3:after{
+    display: block;
+    height: 50%;
+    content: "";
+    border-bottom: 1px solid #d5d5d5;
+    width: 450px;
+    z-index: 1000;
+    position: absolute;
+    right: -1250%;
+}
+#dollar-animate-2{
+    margin:0 auto;
+    height: 123px;
+    width: 123px;
+    position: relative;
+    background: url("../img/animate1.png");
+    background-position: center;
+}
+#dollar-animate-3{
+    margin: 0 auto;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background:url("../img/animate2.png");
+    background-position: center ;
+    z-index: 999;
 }
 @media screen and (min-width: 769px){
     #about-us .col-xs-offset-2{
