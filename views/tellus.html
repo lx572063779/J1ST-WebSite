@@ -16,13 +16,14 @@
             <img src="../img/logo_h.png" id="logo-b">
         </div>
         <div  class=" col-md-3 col-xs-4">
-            <span class="company-name">返回</span>
+            <a  href="javascript :;" onClick="javascript :history.back(-1);" class="company-name">返回</a>
         </div>
     </div>
     </header>
     <div class="header-linear container">
         <h1>J1ST DO IT.</h1>
-        <button>Sign up</button>
+        <span></span>
+        <button id="to-console">Sign up</button>
     </div>
     <div class="text-schedule container">
         <div class="row">
@@ -67,13 +68,13 @@
             <div>
                 <textarea id="thought-idea" placeholder="具体说明您的需求和想法，谢谢！"></textarea>
             </div>
-            <button type="submit" id="form-sub">联系销售</button>
+            <button type="submit" id="form-sub" >联系销售</button>
         </form>
     </div>
     <div id="full-stack-two">
         <h1>Full-Stack</h1>
         <h3>IoT Startup</h3>
-        <button>QuickStart</button>
+        <button onclick="location.href='quickstart.html'">QuickStart</button>
     </div>
     <div id="about-us" class="container">
         <div class="row">
@@ -88,5 +89,20 @@
             <img src="../img/logo_w.png">
         </div>
     </footer>
+    <script src="../js/jquery.min.js"></script>
+    <script>
+
+        var toconsole=$("#to-console");
+        $(document).ready(
+           function () {
+               toconsole.click(
+                       function () {
+                           window.open("http://developer.j1st.io");
+                       }
+               )
+           }
+        )
+
+    </script>
 </body>
 </html>

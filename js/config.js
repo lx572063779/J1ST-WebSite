@@ -6,7 +6,9 @@ var advertext=$("#adver-text");
 var adverlogin=$("#adver-text-log-in");
 var thimg=$("#th-img");
 var registerdiv=$("#register-div");
-
+var tohref=$(".toHref");
+var toadver=$(".toAdvertise");
+var toconsole=$("#to-console");
 window.onload=function () {
     if(winWidth<768){
         imgContainer.css("height",winHeight*706/777);
@@ -19,6 +21,31 @@ window.onload=function () {
         $("#bottom-adver-img").css("height",winHeight*706/777)
     }
 };
+$(document).ready(function () {
+    tohref[0].onclick=function () {
+        window.location.href="../views/feature.html";
+    };
+    tohref[1].onclick=function () {
+        window.location.href="../views/feature.html";
+    };
+    tohref[2].onclick=function () {
+        window.location.href="../views/feature.html";
+    };
+    toadver[0].onclick=function () {
+        window.location.href="../views/advertise.html";
+    };
+    toadver[1].onclick=function () {
+        window.location.href="../views/advertise.html";
+    };
+    toadver[2].onclick=function () {
+        window.location.href="../views/advertise.html";
+    };
+    toconsole.click(
+        function () {
+            window.open("http://developer.j1st.io");
+        }
+    )
+});
 
 
 

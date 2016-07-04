@@ -16,13 +16,14 @@
             <img src="../img/logo_h.png" id="logo-b">
         </div>
         <div  class=" col-md-3 col-xs-4">
-            <span class="company-name">返回</span>
+            <a href="javascript :;" onClick="javascript :history.back(-1);" class="company-name">返回</a>
         </div>
     </div>
 </header>
 <div class="header-linear container">
         <h1>J1ST DO IT.</h1>
-        <button>Sign up</button>
+        <button id="to-console">Sign up</button>
+        <span></span>
 </div>
 <div id="dev-step" class="container">
     <div class="step-1 step">
@@ -49,7 +50,7 @@
         <div class="row join-us-2">
             <span class="col-md-6 col-md-offset-3">安排你的专属演示，发现合作契机。</span>
         </div>
-        <button class="join-us-3">联系销售</button>
+        <button class="join-us-3" onclick="location.href='tellus.html'">联系销售</button>
     </div>
     <div id="about-us" class="container">
         <div class="row">
@@ -65,5 +66,20 @@
         <img src="../img/logo_w.png">
     </div>
 </footer>
+<script src="../js/jquery.min.js"></script>
+<script>
+
+    var toconsole=$("#to-console");
+    $(document).ready(
+            function () {
+                toconsole.click(
+                        function () {
+                            window.open("http://developer.j1st.io");
+                        }
+                )
+            }
+    )
+
+</script>
 </body>
 </html>

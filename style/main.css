@@ -323,6 +323,7 @@ header .company-name{
 }
 #th-img dl{
     height:80%;
+    cursor: pointer;
 }
 #th-img dl:hover{
     animation:scaleXYZ .3s linear;
@@ -729,6 +730,16 @@ footer img{
     color: #ffffff;
     text-shadow: #0b847b 0 2px 2px;
 }
+#tell-us .header-linear span{
+    height: 90px;
+    width: 190px;
+    position: absolute;
+    background: url("../img/gaosi2.png");
+    right: 9%;
+    bottom: -25%;
+    z-index: 1;
+    background-position: 60%;
+}
 #tell-us .header-linear button{
     background: linear-gradient(75deg,#fdcd6a,#ff9a61);
     border-radius:8px;
@@ -737,6 +748,7 @@ footer img{
     position: absolute;
     right: 10%;
     bottom: -10%;
+    z-index: 999;
 }
 #quick-start .header-linear{
     height: 243px;
@@ -753,14 +765,25 @@ footer img{
     color: #ffffff;
     text-shadow: #0b847b 0 2px 2px;
 }
+#quick-start .header-linear span{
+    height: 90px;
+    width: 190px;
+    position: absolute;
+    background: url("../img/gaosi1.png");
+    right: 9%;
+    bottom: -25%;
+    z-index: 1;
+    background-position: 60%;
+}
 #quick-start .header-linear button{
-    background: linear-gradient(-15deg,#acfbdf,#66e29b);
+    background: linear-gradient(90deg,#acfbdf,#66e29b);
     border-radius:8px;
     width:170px;
     color: #fff;
     position: absolute;
     right: 10%;
     bottom: -10%;
+    z-index: 999;
 }
 #tell-us .text-schedule{
     height: 264px;
