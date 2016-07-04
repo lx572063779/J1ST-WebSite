@@ -9,6 +9,9 @@ var registerdiv=$("#register-div");
 var tohref=$(".toHref");
 var toadver=$(".toAdvertise");
 var toconsole=$("#to-console");
+var registerbutton=$(".register-button");
+var registerbuttonA=$(".register-button>a");
+var logo=$(".logo");
 window.onload=function () {
     if(winWidth<768){
         imgContainer.css("height",winHeight*706/777);
@@ -44,7 +47,17 @@ $(document).ready(function () {
         function () {
             window.open("http://developer.j1st.io");
         }
-    )
+    );
+    registerbutton.mouseover(
+        function () {
+            registerbuttonA.css("color","#5e5e5e");
+        }
+    );
+    registerbutton.mouseout(
+        function () {
+            registerbuttonA.css("color","#9E9E9F");
+        }
+    );
 });
 
 

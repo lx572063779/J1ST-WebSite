@@ -10,16 +10,18 @@
     <link rel="stylesheet" href="../style/main.css">
 </head>
 <body id="join-in">
-<header class="container" >
-    <div class="row">
-        <div class="logo col-xs-2 ">
-            <img src="../img/logo_h.png" id="logo-b">
+<div class="header-container">
+    <header class="container" >
+        <div class="row">
+            <div class="logo col-xs-2 ">
+                <img src="../img/logo_h.png" id="logo-b">
+            </div>
+            <div  class=" col-md-3 col-xs-4">
+                <a  href="javascript :;" onClick="javascript :history.back(-1);" class="company-name">返回</a>
+            </div>
         </div>
-        <div  class=" col-md-3 col-xs-4">
-            <a  href="javascript :;" onClick="javascript :history.back(-1);" class="company-name">返回</a>
-        </div>
-    </div>
-</header>
+    </header>
+</div>
 <div id="header-img" class="container">
     <div class="col-md-8">
         <img src="../img/Solution.png">
@@ -89,5 +91,13 @@
         <img src="../img/logo_w.png">
     </div>
 </footer>
+<script src="../js/jquery.min.js"></script>
+<script>
+    $(".logo").click(
+            function () {
+                window.location.href="../index.html";
+            }
+    )
+</script>
 </body>
 </html>
