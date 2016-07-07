@@ -10,7 +10,7 @@ var submitA=$("#form-sub");
 submitA.click(function () {
     $.ajax({
         type: 'GET',
-        url: 'http://192.168.1.27:8080/email/send?'+ajaxForm.serialize(),
+        url: 'http://j1st.io:8089/email/send?'+ajaxForm.serialize(),
         dataType: 'jsonp',
         success: function(data) {
             
