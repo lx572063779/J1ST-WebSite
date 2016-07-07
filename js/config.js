@@ -21,7 +21,7 @@ window.onload=function () {
         adverlogin.css("height",winHeight/7);
         thimg.css("height",winHeight*6/8);
         registerdiv.css("height",winHeight/4);
-        $("#bottom-adver-img").css("height",winHeight*706/777)
+        
     }
 };
 $(document).ready(function () {

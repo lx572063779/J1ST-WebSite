@@ -8,40 +8,46 @@
     <title>Zeninfor</title>
     <link href="../style/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../style/main.css">
+    <style>
+        .app-image{
+            top: -120px;
+            left: -60px;
+        }
+    </style>
 </head>
 <body id="quick-start">
 <div class="header-container">
-    <header class="container" >
+    <header class="container">
         <div class="row">
             <div class="logo col-xs-2 ">
-                <img src="../img/logo_h.png" id="logo-b">
+
             </div>
             <div  class=" col-md-3 col-xs-4">
-                <a  href="javascript :;" onClick="javascript :history.back(-1);" class="company-name">返回</a>
+                <a  href="javascript:void(0);" onClick="javascript:history.back(-1);" class="company-name">返回</a>
             </div>
         </div>
     </header>
 </div>
 <div class="header-linear ">
-        <h1>J1ST DO IT.</h1>
+        <h1>QuickStart</h1>
         <button id="to-console">Sign up</button>
         <span></span>
 </div>
 <div id="dev-step" class="container">
     <div class="step-1 step">
-        <img src="../img/Quickstart-1.png">
+        <img src="../img/Quickstart-1.png" class="step_img">
         <h1>Step1 : 成为开发者</h1>
         <p>注册  <a href="http://developer.j1st.io">developer.j1st.io</a>  成为产品开发者，就能够登录“J1ST.IO 及时云”创建自己的物联网产品；或者体验 J1ST Demo 示例。</p>
     </div>
     <div class="step-2 step">
-        <img src="../img/Quickstart-2.png">
+        <img src="../img/Quickstart-2.png" class="step-2-img step_img">
         <h1>Step2 : 连接“及时云”的硬件</h1>
-        <p>以 Developer 身份登陆 J1ST Console 控制台，系统默认生成一个 J1ST Demo产品示例；下载  <a href="">ZEmu Startup</a>  手机应用，以 Developer 身份登陆 APP就可以模拟生成物联网硬件。</p>
+        <p>以 Developer 身份登陆 J1ST Console 控制台，系统默认生成一个 J1ST Demo产品示例；下载<a href="#" class="tooltip-test" data-toggle="tooltip" data-placement="top" title="<img class='app-image' src='../img/app.png'>">ZEmu Startup</a>  手机应用，以 Developer 身份登陆 APP就可以模拟生成物联网硬件。</p>
     </div>
     <div class="step-3 step">
-        <img src="../img/Quickstart-3.png">
+        <img src="../img/Quickstart-3.png" class="step_img">
         <h1>Step3 : 产品体验</h1>
-        <p>下载  <a href="">ZE products</a>  手机应用，注册成为产品用户 Player；通过手机 APP 体验模拟硬件的交互。强烈建议，在 J1ST Console 开发者控制台修改 J1ST Demo 的产品Fn 功能，再试试 Player 侧的交互。</p>
+        <p>下载  <a href="#" class="tooltip-test" data-toggle="tooltip" data-placement="top" title="<img class='app-image' src='../img/app2.png'>">ZE products</a>  手机应用，注册成为产品用户 Player；通过手机 APP 体验模拟硬件的交互。强烈建议，在 J1ST Console 开发者控制台修改 J1ST Demo 的产品Fn 功能，再试试 Player 侧的交互。</p>
     </div>
 </div>
 <div id="front-foot">
@@ -50,25 +56,23 @@
             <span class="col-md-4 col-md-offset-4">Schedule your demo</span>
         </div>
         <div class="row join-us-2">
-            <span class="col-md-6 col-md-offset-3">安排你的专属演示，发现合作契机。</span>
+            <span class="col-md-6 col-md-offset-3">安排你的专属演示，发现合作契机</span>
         </div>
         <button class="join-us-3" onclick="location.href='tellus.html'">联系销售</button>
     </div>
-    <div id="about-us" class="container">
-        <div class="row">
-            <span class="col-md-1 col-xs-2 col-xs-offset-2">Terms</span>
-            <span class="col-md-1 col-xs-2">Privacy</span>
-            <span class="col-md-1 col-xs-2">About</span>
-        </div>
-    </div>
 </div>
 <footer class="container" id="footer">
-    <div id="footer-log">
-        <p>© 2016 Zeninfor Co.,Ltd&nbsp&nbsp&nbsp沪ICP备16017154号-1</p>
-        <img src="../img/logo_w.png">
+    <div class="row">
+        <p class="col-md-5">© 2016 Zeninfor Co.,Ltd&nbsp&nbsp&nbsp沪ICP备16017154号-1</p>
+        <div class="nav_group col-md-3">
+            <a>Terms</a>
+            <a>Privacy</a>
+            <a>About</a>
+        </div>
     </div>
 </footer>
 <script src="../js/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/tooltip.min.js"></script>
 <script>
 
     var toconsole=$("#to-console");
@@ -86,6 +90,8 @@
                 window.location.href="../index.html";
             }
     )
+    $(function () { $(".tooltip-test").tooltip({html : true });
+    });
 </script>
 </body>
 </html>
