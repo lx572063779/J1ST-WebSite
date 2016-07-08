@@ -1,13 +1,23 @@
 var name=$("#a-name").val();
 var ajaxForm=$("form");
-var mobile=$("#a-phone").val();
-var eMail=$("#a-email").val();
-var company=$("#a-company").val();
-var address=$("#a-adress").val();
-var rofessional=$("#a-select").val();
-var advice=$("#thought-idea").val();
 var submitA=$("#form-sub");
 submitA.click(function () {
+    if ($("#a-phone").val()==""){
+        alert("请留下您的邮箱哦");
+        return;
+    }
+    if ($("#a-email").val()==""){
+        alert("请留下您的手机号码哦");
+        return;
+    }
+    if ($("#a-name").val()==""){
+        alert("请留下您的大名哦");
+        return;
+    }
+    if ($("#thought-idea").val()==""){
+        alert("请留下您的想法哦");
+        return;
+    }
     $.ajax({
         type: 'GET',
         url: 'http://j1st.io:8089/email/send?'+ajaxForm.serialize(),
