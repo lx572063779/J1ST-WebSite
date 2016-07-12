@@ -185,6 +185,9 @@ header{
     top: 20%;
 
 }
+#left-adver-text{
+
+}
 #adver-text{
     height: 300px;
 }
@@ -408,7 +411,7 @@ header .company-name{
     color: #717071;
     font-size: 14pt;
     letter-spacing: 2px;
-    text-indent: 1.5em;
+
 }
 .bottom-sub{
     border-bottom: 1px solid #d5d5d5;
