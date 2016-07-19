@@ -8,6 +8,57 @@
     <title>Zeninfor</title>
     <link href="../style/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../style/main.css">
+    <style>
+        #input-container{
+            border: 1px solid #CCCCCC;
+            background: #F2F2F2;
+            width: 110px;
+            height: 38px;
+            line-height: 38px;
+            margin-left: 54px;
+            margin-top: 20px;
+            text-align: center;
+            cursor: pointer;
+            display: inline-block;
+        }
+        #career{
+            width: 280px;
+            height: 35px;
+            border-radius: 4px;
+            border: 1px solid #CCCCCC;
+        }
+        .modal-footer{
+            padding: 0;
+        }
+        .modal-footer #submit-upload{
+            width: 100px;
+            height: 32px;
+            background:#FF931E;
+            border-radius: 0;
+            margin-bottom: 10px;
+            margin-right: 15px;
+            margin-top: 10px;
+        }
+        #myModalLabel{
+            width: 60px;
+            height: 26px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        #close-button{
+            border: none;
+            font-size: 30px;
+            color: #ccc;
+            height: 26px;
+            display: inline-block;
+            background: none;
+            /* width: 26px; */
+            /* height: 26px; */
+            /* vertical-align: top; */
+            float: right;
+            margin-top: -11px;
+        }
+    </style>
 </head>
 <body id="join">
 <div class="header-container">
@@ -31,6 +82,49 @@
         </div>
     </div>
 </div>
+<div class="modal fade" id="upload" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true" style="color: #717071">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close"
+                        data-dismiss="modal" aria-hidden="true">
+                </button>
+                <h4 class="modal-title" id="myModalLabel" style="font-size: 18px">
+                    提示
+                </h4>
+                <button type="button" id="close-button"   data-dismiss="modal" style="">×
+                </button>
+            </div>
+            <div class="modal-body">
+              <span style="margin-top: 20px;font-size: 14px;margin-left:54px;display: block">请上传您的简历，我们会在第一时间联系您</span>
+              <div id="input-container">
+                  选择文件
+                  <input type="file" placeholder="" id="uploadFile" style="display: block;width: 108px;font-size: 25px;opacity: 0;position: relative;top: -40px">
+              </div>
+                <span id="showFileName" style="position: relative;top: -42px;left: 13px"></span>
+                <div>
+                    <select class="" id="career" name="career" style="margin-top: -10px;margin-left: 54px;margin-bottom: 32px">
+                        <option value="" style="color: #CCCCCC">- 选择职位 - </option>
+                        <option value="嵌入式">- Embedded.嵌入式</option>
+                        <option value="后端开发 ">- Server application . 服务器应用</option>
+                        <option value="前端开发">- Web application.前端应用</option>
+                        <option value="手机应用">- Phone APP.手机应用</option>
+                        <option value="产品经理">- Product 产品经理</option>
+                        <option value="销售经理">- Sales 销售经理</option>
+                        <option value="设计总监">- Design 设计总监</option>
+                        <option value="其他">- 其他   Others</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="submit-upload" style="border: none" disabled>
+                    提交
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
 <div class="container">
     <div class="" id="teco">
         <div class="left-text">
@@ -40,22 +134,22 @@
             <h1>Technology</h1>
             <div class="worker">
                 <span>Embedded.嵌入式：</span>
-                <a title="请发送您的简历" href="mailto:hr@zeninfor.com?subject=嵌入式&body=请上传您的简历">加盟 ZE</a>
+                <a title="请发送您的简历" data-toggle="modal" data-target="#upload" href="#upload">加盟 ZE</a>
                 <p>熟悉 Linux、RTOS 等嵌入式环境，积累了I2C、SPI、UART等接口的实际开发经验；精通C/C++编程，具备 TCP/IP 网络应用的实际产品开发经验；</p>
             </div>
             <div class="worker">
                 <span>Server application . 服务器应用：</span>
-                <a title="请发送您的简历" href="mailto:hr@zeninfor.com?subject=服务器应用&body=请上传您的简历">加盟 ZE</a>
+                <a title="请发送您的简历" data-toggle="modal" data-target="#upload" href="#upload">加盟 ZE</a>
                 <p>熟悉 JAVA Spring MVC 开发方式，具备 NIO、AMQP、机器学习、Hadoop 方向的实际产品开发经验；</p>
             </div>
             <div class="worker">
                 <span>Web application.前端应用:</span>
-                <a title="请发送您的简历" href="mailto:hr@zeninfor.com?subject=前端应用&body=请上传您的简历">加盟 ZE</a>
+                <a title="请发送您的简历" data-toggle="modal" data-target="#upload" href="#upload">加盟 ZE</a>
                 <p>熟悉 Nodejs，使用 AngularJS、JQuery 任一开发框架，独立完成前台应用开发；</p>
             </div>
             <div class="worker">
                 <span>Phone APP.手机应用:</span>
-                <a title="请发送您的简历" href="mailto:hr@zeninfor.com?subject=手机应用&body=请上传您的简历">加盟 ZE</a>
+                <a title="请发送您的简历" data-toggle="modal" data-target="#upload" href="#upload">加盟 ZE</a>
                 <p>能够独立完成 Android、iOS、Windows 任一手机平台的 APP 应用；</p>
             </div>
         </div>
@@ -68,17 +162,17 @@
         <div id="market-text">
             <div class="left-text">
             <span>Product 产品经理：</span>
-            <a title="请发送您的简历" href="mailto:hr@zeninfor.com?subject=产品经理&body=请上传您的简历">加盟 ZE</a>
+            <a title="请发送您的简历" data-toggle="modal" data-target="#upload" href="#upload">加盟 ZE</a>
             <p>互联网、新能源、建筑自动化、消费电子、自动化生产、照明、电工、企业应用等列出或未列出的领域，愿意和我们聊聊你曾经从零到一的产品历程，并且你熟悉物联网技术和应用；</p>
             </div>
             <div class="left-text left-text-2">
             <span>Sales 销售经理：</span>
-            <a title="请发送您的简历" href="mailto:hr@zeninfor.com?subject=销售经理&body=请上传您的简历">加盟 ZE</a>
+            <a title="请发送您的简历" data-toggle="modal" data-target="#upload" href="#upload">加盟 ZE</a>
             <p>互联网、新能源、建筑自动化、消费电子、自动化生产、照明、电工、企业应用等列出或未列出的领域，能够清晰阐述你在哪个细分市场，可以创造多少基于物联网解决方案的销售额，和我们聊聊你需要多少销售费用和技术支持吧；</p>
             </div>
             <div class="left-text left-text-3">
             <span>Design 设计总监</span>
-            <a title="请发送您的简历" href="mailto:hr@zeninfor.com?subject=设计总监&body=请上传您的简历">加盟 ZE</a>
+            <a title="请发送您的简历" data-toggle="modal" data-target="#upload" href="#upload">加盟 ZE</a>
             <p>插画、图标、样宣、UI、VI 等等，请向我们投递对正因科技当前产品的任意设计、优化方案，这样才比较容易和 IoT 偏执狂找到话题。并且，你真的要对互联网技术有点兴趣才行。</p>
             </div>
         </div>
@@ -101,37 +195,22 @@
         <div class="row join-us-2">
             <span class="col-md-6 col-md-offset-3">安排你的专属演示，发现合作契机</span>
         </div>
-        <button class="join-us-3" onclick="location.href='tellus.html'">联系销售</button>
+        <button class="join-us-3" onclick="location.href='bizcontact.html'">联系销售</button>
     </div>
 </div>
 <footer class="container" id="footer">
     <div class="row">
         <p class="col-md-5">© 2016 Zeninfor Co.,Ltd&nbsp&nbsp&nbsp沪ICP备16017154号-1</p>
         <div class="nav_group col-md-3">
-            <a>Terms</a>
-            <a>Privacy</a>
+            <a href="term.html">Terms</a>
+            <a href="term.html">Privacy</a>
             <a>About</a>
         </div>
     </div>
 </footer>
 <script src="../js/jquery.min.js"></script>
-<script>
-    $(".logo").click(
-            function () {
-                window.location.href="../index.html";
-            }
-    );
-    $("#to-console").click(
-            function () {
-                window.open("http://developer.j1st.io")
-            }
-    );
-    $("#sign-up").click(
-            function () {
-                window.open("http://developer.j1st.io")
-            }
-    )
-</script>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="../js/advertise.js"></script>
 
 </body>
 </html>
