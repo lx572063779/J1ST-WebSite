@@ -19,12 +19,17 @@ submitA.click(function () {
         return;
     }
     $.ajax({
-        type: 'GET',
+        type: 'POST',
         url: 'http://j1st.io:8089/email/send?'+ajaxForm.serialize(),
-        dataType: 'jsonp',
         success: function(data) {
-            
+            console.log(data.status);
+            alert("发送成功")
+        },
+        error:function (data) {
+            console.log(data.status);
+            alert("网络出问题了，请稍后发送")
         }
+
     });
-    setTimeout(alert("发送成功，静候佳音"),(2000));
+
 });

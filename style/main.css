@@ -174,19 +174,19 @@ header{
 #left-img{
     display: block;
     position: absolute;
-    left: 3%;
+    left: 1%;
     top: 20%;
 
 }
 #right-img{
     display: block;
     position: absolute;
-    right: 3%;
+    right: 2%;
     top: 20%;
 
 }
 #left-adver-text{
-
+    margin-left: 6%;
 }
 #adver-text{
     height: 300px;
@@ -227,7 +227,7 @@ header .company-name{
     display:block;
     width: 260px;
     margin: 0 auto;
-    left: 55%;
+    left: 53%;
     top: 50%;
     -webkit-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
@@ -328,12 +328,15 @@ header .company-name{
 }
 #img-ws{
     position: absolute;
-    left: 17%;
+    left: 19%;
     top:48px;
+}
+#upload .modal-dialog{
+    margin-top: 150px;
 }
 #img-sgz{
     position: absolute;
-    right: 16.5%;
+    right: 18%;
     top:48px;
 }
 .middle-text-sp{
@@ -348,14 +351,14 @@ header .company-name{
 }
 .middle-text-sp-1{
     top: 150px;
-    left: 50%;
+    left: 51%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 .middle-text-sp-2{
     top: 190px;
-    left: 50%;
+    left: 51%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -729,7 +732,7 @@ footer img{
 #market-text a{
     font-style: normal;
     float: right;
-    color: #e79330;
+    color: #FF9831;
     clear: both;
     font-size: 11pt;
 }
@@ -1127,7 +1130,8 @@ footer img{
     position: relative;
 }
 #dev-step a{
-    color: #E79330;
+    color: #FF9831;
+
 }
 #dev-step .step h1{
     text-align: left;
@@ -1180,7 +1184,6 @@ footer img{
     position: absolute;
     bottom: 0;
     height: 60px;
-    width: 540px;
     line-height: 30px;
 }
 #dev-step .step-3{
@@ -1207,6 +1210,94 @@ footer img{
 }
 .header-container{
     border-bottom: 1px solid #d5d5d5;
+}
+#term-prc .container{
+    width: 90%;
+}
+#term-prc .header-container{
+    border: none;
+    width: 100%;
+}
+#term-prc .header-container .row{
+    width: 100%;
+}
+#term-body{
+    width: 90%;
+    margin:0 auto;
+    margin-top: 45px;
+}
+#term{
+    margin-top: 70px;
+    width: 16%;
+    position: fixed;
+}
+#term ul{
+    width: 230px;
+}
+#term li{
+    border-bottom: 1px solid #d5d5d5;
+    height: 50px;
+}
+#term a{
+    border: none;
+    font-size: 16px;
+    color: #595757;
+    padding: 13px 15px
+}
+#term .active a{
+    color: #ff9831;
+}
+#term-text h1{
+    display: block;
+    font-size: 50px;
+    font-weight: 300;
+    text-align: left;
+    margin: 0;
+    border-bottom: 1px solid #d5d5d5;
+    height: 56px;
+    line-height: 3px;
+}
+#term-text{
+    float: right;
+    font-size: 15px;
+    margin-top: 63px;
+}
+#term-text p{
+    text-indent: 2em;
+    letter-spacing: 0.05em;
+    color: #595757;
+    display: block;
+    margin-top: 25px;
+    line-height: 1.6em;
+}
+#term-text h3{
+    text-align: left;
+    margin-left: 0;
+    margin-top: 25px;
+    color:#ff9831 ;
+}
+#term-text ul{
+    color: #595757;
+   /* margin-top: 18px;*/
+    line-height: 2em;
+    text-indent: -1em;
+    padding-left: 1em;
+}
+#term-text h2{
+    padding: 0;
+    background:#FFe9d2;
+    color: #FF871A;
+    font-size:18px;
+    margin-left: 0;
+    margin-right: 0;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 40px;
+    text-indent: 1em;
+}
+#term-prc .header-container{
+    position: fixed;
+    top: 0;
 }
 @media screen and (min-width: 769px){
     #about-us .col-xs-offset-2{
@@ -1527,5 +1618,14 @@ footer img{
     }
     #mail-form .two-input{
         width: 100%;
+    }
+    #term-prc .header-container{
+        position: relative;
+    }
+    #term-prc #term-text{
+        width: 100%;
+    }
+    #term-text{
+        margin-top: 20px;
     }
 }

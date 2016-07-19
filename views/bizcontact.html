@@ -15,7 +15,6 @@
     <header class="container" >
         <div class="row">
             <div class="logo col-xs-2 ">
-
             </div>
             <div  class=" col-md-3 col-xs-4">
                 <a  href="javascript:void(0);" onClick="javascript:history.back(-1);" class="company-name">返回</a>
@@ -38,22 +37,22 @@
         <form>
             <div class="two-input-group row">
                 <div class="form-group two-input col-md-5 " >
-                    <input placeholder="姓 名" class="form-control" id="a-name" name="name" data-bv-notempty data-bv-notempty-message="姓名不能为空哦">
+                    <input placeholder="姓 名" maxlength="10" class="form-control" id="a-name" name="name" data-bv-notempty data-bv-notempty-message="姓名不能为空哦">
                 </div>
                 <div class="form-group two-input col-md-5 input-margin-left">
-                    <input placeholder="手机号码" class="form-control" id="a-email" name="mobile" data-bv-notempty data-bv-notempty-message="请留下手机号码方便我们与您联系" >
+                    <input placeholder="手机号码" maxlength="15"  class="form-control" id="a-email" name="mobile" data-bv-notempty data-bv-notempty-message="请留下手机号码方便我们与您联系" >
                 </div>
             </div>
             <div class="two-input-group row">
                 <div class="form-group two-input col-md-5">
-                    <input placeholder="电子邮件" class="form-control" id="a-phone" name="email" data-bv-notempty data-bv-notempty-message="邮箱请您也留下哦">
+                    <input placeholder="电子邮件" maxlength="20" class="form-control" id="a-phone" name="email" data-bv-notempty data-bv-notempty-message="邮箱请您也留下哦">
                 </div>
                 <div class="form-group two-input col-md-5 input-margin-left">
-                    <input placeholder="公司名称(可选项)" class="form-control" id="a-company" name="company">
+                    <input placeholder="公司名称(可选项)" maxlength="20" class="form-control" id="a-company" name="company">
                 </div>
             </div>
             <div class="form-group one-input-group">
-                <input placeholder="办公地址(可选项)" class="form-control" id="a-adress" name="address">
+                <input placeholder="办公地址(可选项)" maxlength="40" class="form-control" id="a-adress" name="address">
             </div>
             <div>
                 <select class="" id="select" name="rofessional" >
@@ -70,7 +69,7 @@
                 </select>
             </div>
             <div>
-                <textarea id="thought-idea" placeholder="   具体说明您的需求和想法，谢谢！" name="advice"></textarea>
+                <textarea id="thought-idea"   placeholder="   具体说明您的需求和想法，谢谢！" name="advice" maxlength="500"></textarea>
             </div>
             <button  id="form-sub" type="button">联系销售</button>
         </form>
@@ -85,8 +84,8 @@
     <div class="row">
         <p class="col-md-5">© 2016 Zeninfor Co.,Ltd&nbsp&nbsp&nbsp沪ICP备16017154号-1</p>
         <div class="nav_group col-md-3">
-            <a>Terms</a>
-            <a>Privacy</a>
+            <a href="term.html">Terms</a>
+            <a href="term.html">Privacy</a>
             <a>About</a>
         </div>
     </div>
@@ -103,20 +102,22 @@
                        function () {
                            window.open("http://developer.j1st.io");
                        }
-               )
+               );
+               $(".logo").click(
+                       function () {
+                           window.location.href="../index.html";
+                       }
+               );
+               $("form").bootstrapValidator({
+                   feedbackIcons: {
+                   }
+               })
            }
         );
         $(document).ready(
-                $("form").bootstrapValidator({
-                    feedbackIcons: {
-                    }
-                })
+
         );
-        $(".logo").click(
-                function () {
-                    window.location.href="../index.html";
-                }
-        );
+
     </script>
 </body>
 </html>
