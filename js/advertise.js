@@ -6,12 +6,12 @@ $(".logo").click(
 );
 $("#to-console").click(
     function () {
-        window.open("http://developer.j1st.io")
+        window.open("http://console.j1st.io")
     }
 );
 $("#sign-up").click(
     function () {
-        window.open("http://developer.j1st.io")
+        window.open("http://console.j1st.io")
     }
 );
 $("#submit-upload").click(
