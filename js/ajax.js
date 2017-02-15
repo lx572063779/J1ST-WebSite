@@ -20,7 +20,7 @@ submitA.click(function () {
     }
     $.ajax({
         type: 'POST',
-        url: 'http://j1st.io:8089/email/send?'+ajaxForm.serialize(),
+        url: 'https://j1st.io:8089/email/send?'+ajaxForm.serialize(),
         success: function(data) {
             console.log(data.status);
             alert("发送成功")

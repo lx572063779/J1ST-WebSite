@@ -23,7 +23,7 @@ $("#submit-upload").click(
         formData.append('file',$("#uploadFile")[0].files[0]);
         formData.append('career',$("#career").val());
         $.ajax({
-            url: 'http://j1st.io:8089/email/join',
+            url: 'https://j1st.io:8089/email/join',
             type: 'POST',
             cache: false,
             data: formData,
