@@ -23,7 +23,7 @@ $("#submit-upload").click(
         formData.append('file',$("#uploadFile")[0].files[0]);
         formData.append('career',$("#career").val());
         $.ajax({
-            url: 'https://j1st.io:8089/email/join',
+            url: 'http://j1st.io:8089/email/join',
             type: 'POST',
             cache: false,
             data: formData,
@@ -51,4 +51,4 @@ $("#uploadFile").on("change",function(){
         $("#showFileName").html("请上传pdf,doc,html,jpg,png等格式的简历");
         $("#submit-upload")[0].setAttribute("disabled","disabled")
     }
-})
+});

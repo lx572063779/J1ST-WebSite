@@ -1,6 +1,25 @@
 var name=$("#a-name").val();
 var ajaxForm=$("form");
 var submitA=$("#form-sub");
+(function($){
+    $.fn.serializeJson=function(){
+        var serializeObj={};
+        var array=this.serializeArray();
+        var str=this.serialize();
+        $(array).each(function(){
+            if(serializeObj[this.name]){
+                if($.isArray(serializeObj[this.name])){
+                    serializeObj[this.name].push(this.value);
+                }else{
+                    serializeObj[this.name]=[serializeObj[this.name],this.value];
+                }
+            }else{
+                serializeObj[this.name]=this.value;
+            }
+        });
+        return serializeObj;
+    };
+})(jQuery);
 submitA.click(function () {
     if ($("#a-phone").val()==""){
         alert("请留下您的邮箱哦");
@@ -18,9 +37,13 @@ submitA.click(function () {
         alert("请留下您的想法哦");
         return;
     }
+    var data=JSON.stringify(ajaxForm.serializeJson());
     $.ajax({
         type: 'POST',
-        url: 'https://j1st.io:8089/email/send?'+ajaxForm.serialize(),
+        contentType: "application/json",
+        url: 'http://j1st.io:8089/email/send',
+        data:data,
+        dataType:'json',
         success: function(data) {
             console.log(data.status);
             alert("发送成功")
