@@ -19,6 +19,18 @@ button{
     font-size: 14pt;
     display: block;
 }
+.imgs{
+   
+    display:flex; 
+    justify-content:center; 
+}
+.backimg{
+    /*margin-left: 100px;*/
+    /*border:1px solid red;*/
+    display: inline-block;
+    height: 80vh;
+    max-width: 100%;
+}
 button:hover{
     -webkit-animation: scaleXYZ 0.2 linear;
     animation: scaleXYZ 0.2 linear;
@@ -154,16 +166,18 @@ header{
     height: 44px;
 }
 .logo{
-    width: 74px;
-    height: 72px;
+    width: 54px;
+    height: 52px;
+    margin-top: 10px;
     cursor: pointer;
-    background: url("../img/logo_h.png") no-repeat;
+    background: url("../img/favicon.ico") no-repeat;
+     background-size:100% 100%;-moz-background-size:100% 100%;
     background-position: center;
 }
-.logo:hover{
-    background: url("../img/pc-Logo1-2.png") no-repeat;
+/* .logo:hover{
+    background: url("../img/favicon.ico") no-repeat;
     background-position: center;
-}
+} */
 .transyellow:hover{
     color: #e79330;
 }
@@ -543,6 +557,15 @@ header .company-name{
 #footer .row{
     width: 1026px;
     margin: 0 auto;
+    display:flex; 
+    justify-content:center; 
+    align-items:center;
+}
+.son{
+    width: 780px;
+    margin: 0 auto;
+    margin-right: 0px;
+
 }
 #footer p{
     display: block;
