@@ -20,16 +20,16 @@ button{
     display: block;
 }
 .imgs{
-   
-    display:flex; 
-    justify-content:center; 
+    margin: 50px 0px 20px 220px;
+    /* border:1px solid red; */
+    width: 70%;
+    height:70%;
 }
 .backimg{
-    /*margin-left: 100px;*/
-    /*border:1px solid red;*/
-    display: inline-block;
-    height: 80vh;
-    max-width: 100%;
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:100%;
 }
 button:hover{
     -webkit-animation: scaleXYZ 0.2 linear;
